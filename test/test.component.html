@@ -1,0 +1,95 @@
+<!-- <h1 [style.color]="number === '0' ? 'red' : 'orange'">{{name}}</h1> -->
+<!-- <h1 [ngStyle]="styleTwo">{{name}}</h1> -->
+<!-- 
+<button (click)="onClick($event)">hi</button>
+{{greet}} -->
+
+<!-- <h2 *ngIf="hello; else elseBlock">Abu</h2>
+<ng-template #elseBlock>
+    <h1>Bye</h1>
+</ng-template> -->
+
+<!-- <div *ngIf="hello; then thenBlock else elseBlock"></div>
+
+<ng-template #thenBlock>
+    <h2>Hello</h2>
+</ng-template>
+<ng-template #elseBlock>
+    <h2>Bye</h2>
+</ng-template> -->
+
+<!-- <div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">{{red}}</div>
+    <div *ngSwitchCase="'green'">{{green}}</div>
+    <div *ngSwitchCase="'blue'">{{blue}}</div>
+    <div *ngSwitchDefault>Pick another color</div>
+</div> -->
+<!-- <h2>{{'Hello' + parentData}}</h2> -->
+
+<!-- <h1>{{name | titlecase}}</h1>
+<h1>{{name | lowercase}}</h1>
+<h1>{{name | uppercase}}</h1>
+<h1>{{name | slice:2}}</h1> -->
+<!-- <img [src]="imgUrl" alt="{{alt}}"> -->
+
+<!-- <button (click)="func()" #btn>click</button> -->
+<!-- <input type="text" [(ngModel)]= "name">
+<h3>{{name}}</h3> -->
+
+<!-- 
+<input type="text" [(ngModel)]="name">
+<button (click)="func()">submit</button> -->
+
+    <!-- <label for="">Name:</label>
+    <input type="text" placeholder="Name" [(ngModel)]="name">
+    <br>
+    <br>
+    <label for="">Surname:</label>
+    <input type="text" placeholder="Surname" [(ngModel)]="surName">
+    <br>
+    <br>
+    <label for="">Email:</label>
+    <input type="email" placeholder="email" [(ngModel)]="email">
+    <br>
+    <br>
+    <label for="">Password:</label>
+    <input type="password" placeholder="password" [(ngModel)]="password">
+
+<button (click)="func()">Submit</button> -->
+
+<!-- <img [src]="imgUrl" (click)="clicked()"> -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Tasks on angular style, class and attr binding -->
+<!-- 1. Toggle Element -->
+<p [class.newClass]="added">Hello Guys</p>
+<button (click)="clicked()">Button</button>
+
+<!-- 2. Conditional Styling -->
+<div class="box" [style.backgroundColor]="red ? 'red' : 'black'"></div>
+
+<!-- 3.Hover effect -->
+
+<div [style.width.px]="size"
+     [style.height.px]="size"
+     class="hover-effect">
+     Hover over me
+</div>
+<br>
+<br>
+<br>
+
+<!-- 4.click change -->
+<button [style.backgroundColor]="change" (click)="changed()">Click</button>
+
+<!-- 5. two buttons changes -->
+<div class="one" [style.width]="sizee" [style.backgroundColor]="colour"></div>
+<button (click)="increased()">Yes</button>
+<button (click)="decreased()">No</button>
+
+<!-- 6.  -->
+<div class="colors" [style.backgroundColor]="randomColors[0]"></div>
+<div class="colors" [style.backgroundColor]="randomColors[1]"></div>
+<div class="colors" [style.backgroundColor]="randomColors[2]"></div>
+<div class="colors" [style.backgroundColor]="randomColors[3]"></div>
+<button (click)="randomly()">Random</button>
